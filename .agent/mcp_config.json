@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "d:/RIKKEI/LOP HOC/K24_PTIT/CNTT2/SEM IV/2. AI Intergration In Action/Session 13/demo-final-ai-intergration"
+      ]
+    }
+  }
+}

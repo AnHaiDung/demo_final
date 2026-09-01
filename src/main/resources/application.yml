@@ -1,0 +1,32 @@
+spring:
+    application:
+        name: demo-final-ai-intergration
+    ai:
+        openai:
+            api-key: ${OPEN_ROUTER_API_KEY}
+            base-url: ${OPEN_ROUTER_BASED_URL}
+            chat:
+                model: ${OPEN_ROUTER_MODEL}
+                temperature: 0.3
+            embedding:
+                model: text-embedding-3-small
+        vectorstore:
+            pgvector:
+                initialize-schema: true
+                distance-type: cosine_distance
+                index-type: hnsw
+                dimensions: 1536
+
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        url: jdbc:postgresql://aws-0-ap-northeast-2.pooler.supabase.com:6543/postgres?prepareThreshold=0
+        username: postgres.lsdqxwrqfgqikaikjcvs
+        password: Rikkeiedu123@
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+#postgres.uhxuptojzopmstxyvbee:
+
